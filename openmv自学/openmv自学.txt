@@ -1,0 +1,28 @@
+画线
+image.draw_line(line_tuple, color=White) 在图像中画一条直线。
+line_tuple的格式是(x0, y0, x1, y1)，意思是(x0, y0)到(x1, y1)的直线。
+颜色可以是灰度值(0-255)，或者是彩色值(r, g, b)的tupple。默认是白色
+
+
+画框
+image.draw_rectangle(rect_tuple, color=White) 在图像中画一个矩形框。
+rect_tuple 的格式是 (x, y, w, h)
+
+
+画圆
+image.draw_circle(x, y, radius, color=White) 在图像中画一个圆。
+x,y是圆心坐标
+radius是圆的半径
+
+
+画十字
+image.draw_cross(x, y, size=5, color=White) 在图像中画一个十字
+x,y是坐标
+size是两侧的尺寸
+
+
+写字
+image.draw_string(x, y, text, color=White) 在图像中写字 8x10的像素
+x,y是坐标。使用\n, \r, and \r\n会使光标移动到下一行。
+text是要写的字符串
+

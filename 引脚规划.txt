@@ -1,0 +1,32 @@
+P0 -- PB15 -- SPI2(MOSI) -- TIM1(CH3N) -- UART1(RX)
+P1 -- PB14 -- SPI2(MOSI) -- TIM1(CH2N) -- UART1(TX)
+P2 -- PB13 -- SPI2(SCLK) -- TIM1(CH1N) -- CAN2(TX)
+P3 -- PB12 -- SPI2(ss)   ---------------- CAN2(RX)
+P4 -- PB10 -- UART3(TX)  -- I2C2(SCL)  -- TIM2(CH3)
+P5 -- PB11 -- USRT3(RX)  -- I2C2(SDA)  -- TIM2(CH2)
+P6 -- PA5 --  ADC --------- DAC --------- TIM2(CH1)
+
+Reset -- GND表示复位
+BOOT0 -- 3.3V表示连接DFU模式
+Frame Sync -- 刷新频率（摄像头）
+P9 -- 
+P8 -- 
+P7 -- 
+VIN -- 3.6V-5V
+GND -- 电源地
+
+使用的SD卡不得大于32GB（SD<2GB && SDHC<32GB）
+
+
+
+LED1 -- Red
+LED2 -- Green
+LED3 -- Blue
+LED4 -- IR
+
+其中所有引脚都是5V，具有3.3V输出
+
+
+P6在ADC或者DAC模式下并不是5V
+
+
